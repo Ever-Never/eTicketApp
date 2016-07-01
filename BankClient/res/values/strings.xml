@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电子票客户端</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">欢迎进入电子票手机客户端!</string>
+    <string name="title_activity_receive">电子票客户端</string>
+    <string name="title_activity_open_acc">OpenAccActivity</string>
+    <string name="title_activity_cancel_acc">CancelAccActivity</string>
+    <string name="title_activity_deline">DelineActivity</string>
+    <string name="label_aid">AID:</string>
+    <string name="open_acc_return_msg">李某|身份证|110110197009098888|XCDGFV5555577自定义</string>
+     <string name="call_service_inputs">callservice服務模擬入參</string>
+     <string name="label_card_no">卡号:</string>
+     <string name="label_balance">余额:</string>
+     <string name="btnWriteTxt">写票</string>
+     <string name="btnReadTxt">读票</string>
+
+</resources>

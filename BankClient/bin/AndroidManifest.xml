@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtest2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.icfcc.example.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.icfcc.example.activity.BusProcessActivity"
+            android:label="@string/title_activity_receive" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.icfcc.com"
+                    android:path="/test"
+                    android:port="8889"
+                    android:scheme="bankclient" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.icfcc.example.activity.OpenAccActivity"
+            android:label="@string/title_activity_open_acc" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="apptsm.icfcc.client.mobile.andorid.extbiz.bank.0003030000.com"
+                    android:path="/openAcc"
+                    android:port="10688"
+                    android:scheme="tsm4icfcc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.icfcc.example.activity.CancelAccActivity"
+            android:label="@string/title_activity_cancel_acc" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="apptsm.icfcc.client.mobile.andorid.extbiz.bank.0003030000.com"
+                    android:path="/deleteAcc"
+                    android:port="10688"
+                    android:scheme="tsm4icfcc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.icfcc.example.activity.DelineActivity"
+            android:label="@string/title_activity_deline" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="apptsm.icfcc.client.mobile.andorid.extbiz.bank.0003030000.com"
+                    android:path="/delineAcc"
+                    android:port="10688"
+                    android:scheme="tsm4icfcc" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BusProcessActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_inputParamLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收到人行客户端的数据如下："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_inputParam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+             <TextView
+                android:id="@+id/textView_returnMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入银行客户端回执数据："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+ 			<EditText
+                    android:id="@+id/editText_returnMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+    		<Button
+                android:id="@+id/return_icfccActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:onClick="button1OnClick"
+                android:text="返回金店手机客戶端" />
+            <TextView
+                android:id="@+id/textView_intentDataText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TransmitService服务入参"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="URL:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_url"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Msg:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/invoke_icfcc_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:onClick="button1OnClick"
+                android:text="closeSEChannel服务" />
+
+            <TextView
+                android:id="@+id/textView_intentReturnDataLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="closeSEChannel服务的出参："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_intentReturnData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/invoke_openSEChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:onClick="button1OnClick"
+                android:text="打开SE通道" />
+            <TextView
+                android:id="@+id/textView_retCodeOpenSEChannelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="openSEChannel服务的出参："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+              <TextView
+                android:id="@+id/textView_retCodeOpenSEChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
